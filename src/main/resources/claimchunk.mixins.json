@@ -1,0 +1,14 @@
+{
+  "required": true,
+  "package": "mpeciakk.claimchunk.mixins",
+  "compatibilityLevel": "JAVA_8",
+  "mixins": [
+    "ServerPlayerInteractionManagerMixin"
+  ],
+  "client": [
+    "PlayerInteractionManagerMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

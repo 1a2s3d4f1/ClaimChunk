@@ -1,0 +1,16 @@
+.gradle
+.idea
+.settings
+build
+classes
+gradle
+run
+build.gradle
+fabricmod.iml
+fabricmod.ipr
+fabricmod.iws
+gradle.properties
+gradlew
+gradlew.bat
+LICENSE
+settings.gradle

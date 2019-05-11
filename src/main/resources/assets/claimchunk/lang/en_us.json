@@ -1,0 +1,12 @@
+{
+  "text.claimchunk.owner": "Owner: ",
+  "text.claimchunk.members": "Members: ",
+  "text.claimchunk.claimed": "Chunk claimed!",
+  "text.claimchunk.already_claimed": "This chunk is already claimed",
+  "text.claimchunk.not_owner": "You're not owner of this claim",
+  "text.claimchunk.too_many_claims": "You've got too many claims",
+  "text.claimchunk.player_added": "Player added!",
+  "text.claimchunk.member_removed": "Player removed!",
+  "text.claimchunk.unclaimed": "Unclaimed",
+  "text.claimchunk.chunk_not_claimed": "This chunk is not claimed"
+}

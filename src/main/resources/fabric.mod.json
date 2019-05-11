@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "id": "claimchunk",
+  "version": "1.0.0",
+
+  "name": "ClaimChunk",
+  "description": "Simple mod that adds chunk claiming",
+  "authors": [
+    "jestem_maciek"
+  ],
+
+  "license": "CC0-1.0",
+  "icon": "assets/claimchunk/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "mpeciakk.claimchunk.ClaimChunk"
+    ],
+    "client": [
+      "mpeciakk.claimchunk.ClaimChunkClient"
+    ]
+  },
+  "mixins": [
+    "claimchunk.mixins.json"
+  ],
+  "requires": {
+    "fabricloader": ">=0.4.0",
+    "fabric": "*"
+  },
+  "suggests": {
+    "flamingo": "*"
+  }
+}
