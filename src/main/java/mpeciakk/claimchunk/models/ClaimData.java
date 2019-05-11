@@ -2,9 +2,7 @@ package mpeciakk.claimchunk.models;
 
 import mpeciakk.claimchunk.config.ClaimManager;
 
-import java.util.HashSet;
-import java.util.Set;
-import java.util.UUID;
+import java.util.*;
 
 public class ClaimData {
 
@@ -12,7 +10,7 @@ public class ClaimData {
     private int z;
     private int dimension;
     private Member owner;
-    private Set<Member> members = new HashSet<>();
+    private List<Member> members = new ArrayList<>();
 
     public ClaimData() { }
 
@@ -48,7 +46,7 @@ public class ClaimData {
         return owner != null;
     }
 
-    public Set<Member> getMembers() {
+    public List<Member> getMembers() {
         return this.members;
     }
 

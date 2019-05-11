@@ -64,6 +64,15 @@ public class ClaimChunk implements ModInitializer {
 						})
 		));
 
+		CommandRegistry.INSTANCE.register(false, (dispatcher) -> dispatcher.register(
+				CommandManager.literal("claims")
+						.executes((c) -> {
+							ClaimsCommand.execute(c);
+
+							return Command.SINGLE_SUCCESS;
+						})
+		));
+
 		Events.init();
 
 		ServerStartCallback.EVENT.register(minecraftServer -> {

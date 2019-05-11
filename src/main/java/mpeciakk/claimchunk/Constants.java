@@ -15,5 +15,6 @@ public class Constants {
         public static final String MEMBER_REMOVED = "text.claimchunk.member_removed";
         public static final String UNCLAIMED = "text.claimchunk.unclaimed";
         public static final String CHUNK_NOT_CLAIMED = "text.claimchunk.chunk_not_claimed";
+        public static final String NO_CLAIMS = "text.claimchunk.no_claims";
     }
 }

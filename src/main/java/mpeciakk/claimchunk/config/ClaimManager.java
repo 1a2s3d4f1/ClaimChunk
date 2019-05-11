@@ -8,6 +8,8 @@ import mpeciakk.claimchunk.models.ClaimData;
 import mpeciakk.claimchunk.models.Member;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.text.TranslatableTextComponent;
+import net.minecraft.world.dimension.Dimension;
+import net.minecraft.world.dimension.DimensionType;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -40,8 +42,8 @@ public class ClaimManager {
             if (!cd.isOwner(player.getUuid())) return new TranslatableTextComponent(Constants.Messages.NOT_OWNER).getText();
         }
 
-        cd.setX((int) player.x >> 4);
-        cd.setZ((int) player.z >> 4);
+        cd.setX(((int) Math.ceil((int) player.x >> 4)));
+        cd.setZ((int) Math.ceil((int) player.z >> 4));
         cd.setOwner(new Member(player.getDisplayName().getText(), player.getUuid()));
         cd.setDimension(player.dimension.getRawId());
 
@@ -137,5 +139,15 @@ public class ClaimManager {
 
         save();
         return new TranslatableTextComponent(Constants.Messages.MEMBER_REMOVED).getText();
+    }
+
+    public static List<ClaimData> getClaims(PlayerEntity player) {
+        ArrayList<ClaimData> list = new ArrayList<>();
+
+        for (ClaimData cd : data){
+            if (cd.isOwner(player.getUuid())) list.add(cd);
+        }
+
+        return list;
     }
 }

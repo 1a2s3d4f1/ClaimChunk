@@ -18,7 +18,7 @@ public class InfoCommand {
 
         if (sender.world.isClient) return;
 
-        ClaimData cd = ClaimManager.get((int) sender.x >> 4, (int) sender.z >> 4, sender.dimension.getRawId());
+        ClaimData cd = ClaimManager.get(sender.getBlockPos().getX() >> 4, sender.getBlockPos().getZ() >> 4, sender.dimension.getRawId());
 
         System.out.println(cd.isOwned());
 
@@ -33,7 +33,7 @@ public class InfoCommand {
         stringBuilder.append(new TranslatableTextComponent(Constants.Messages.OWNER).getText()).append(cd.getOwner().getName()).append("\n").append(new TranslatableTextComponent(Constants.Messages.MEMBERS).getText()).append("\n");
 
         for (Member member : cd.getMembers()) {
-            stringBuilder.append(member.getName());
+            stringBuilder.append(member.getName()).append(cd.getMembers().indexOf(member) == cd.getMembers().size() - 1 ? "" : "\n");
         }
 
         c.getSource().sendFeedback(new StringTextComponent(stringBuilder.toString()), false);
