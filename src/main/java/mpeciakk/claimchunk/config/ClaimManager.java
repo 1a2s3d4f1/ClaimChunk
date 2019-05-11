@@ -57,7 +57,7 @@ public class ClaimManager {
     public static String unclaim(PlayerEntity player) {
         ClaimData cd = get((int) player.x >> 4, (int) player.z >> 4, player.dimension.getRawId());
 
-        if (!cd.isOwner(player.getUuid())) return new TranslatableTextComponent(Constants.Messages.NOT_OWNER).getText();
+        if (!cd.isOwner(player.getUuid()) && !player.isCreativeLevelTwoOp()) return new TranslatableTextComponent(Constants.Messages.NOT_OWNER).getText();
 
         data.remove(cd);
 
