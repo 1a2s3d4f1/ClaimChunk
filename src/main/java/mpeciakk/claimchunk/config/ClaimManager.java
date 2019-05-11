@@ -76,8 +76,6 @@ public class ClaimManager {
         int n = 0;
 
         for (ClaimData cd : data) {
-            System.out.println(cd.getOwner().getUuid());
-
             if (cd.isOwner(player.getUuid())) n += 1;
         }
 
