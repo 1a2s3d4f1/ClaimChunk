@@ -1,7 +1,7 @@
 # ClaimChunk
 Simple chunk claiming system for Fabric.
 
-##Basic commands:
+## Basic commands:
 /claim - claims current chunk
 /unclaim - unclaims chunk
 /info - displays info about current chunk's claim
