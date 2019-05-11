@@ -1,2 +1,2 @@
 # ClaimChunk
-Simple chunk claiming system for Fabric.
+Simple chunk claiming system for Fabric."# ClaimChunk" 
