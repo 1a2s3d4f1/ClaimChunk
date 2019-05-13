@@ -1,0 +1,12 @@
+{
+  "text.claimchunk.owner": "Właściciel: ",
+  "text.claimchunk.members": "Członkowie: ",
+  "text.claimchunk.claimed": "Zajęto chunk!",
+  "text.claimchunk.already_claimed": "Ten chunk jest już zajęty!",
+  "text.claimchunk.not_owner": "Nie jesteś właścicielem tej działki",
+  "text.claimchunk.too_many_claims": "Posiadasz za dużo działek",
+  "text.claimchunk.player_added": "Gracz dodany!",
+  "text.claimchunk.member_removed": "Gracz usunięty!",
+  "text.claimchunk.unclaimed": "Usunięto działkę",
+  "text.claimchunk.chunk_not_claimed": "Ten chunk nie jest zajęty"
+}
